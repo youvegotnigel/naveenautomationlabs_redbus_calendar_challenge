@@ -117,6 +117,7 @@ public class RedBusCalendarTest {
 
         if (period.equals(getMonthYear())) {
             printHolidayAndMonthYear();
+            System.out.println(getWeekends());
             return;
         }
 
@@ -129,6 +130,7 @@ public class RedBusCalendarTest {
 //                throw new RuntimeException(e);
 //            }
         } while (!period.equals(getMonthYear()));
+        System.out.println(getWeekends());
     }
 
 
@@ -140,7 +142,6 @@ public class RedBusCalendarTest {
     private void printHolidayAndMonthYear() {
         System.out.println("MONTH YEAR :: " + getMonthYear());
         System.out.println("HOLIDAY COUNT :: " + getHolidayCount());
-        System.out.println(getWeekends());
     }
 
     private List<String> getWeekends() {
