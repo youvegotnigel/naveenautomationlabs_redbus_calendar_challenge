@@ -84,7 +84,7 @@ public class RedBusCalendarTest {
 
     private String getMonthYear() {
         explicitWaitMethod(MONTH_YEAR);
-        return driver.findElement(MONTH_YEAR).getText().trim().split("\n")[0];
+        return driver.findElement(MONTH_YEAR).getText().split("\n")[0].trim();
     }
 
     private String getHolidayCount() {
