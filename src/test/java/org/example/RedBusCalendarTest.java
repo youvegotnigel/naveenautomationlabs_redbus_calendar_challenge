@@ -98,8 +98,7 @@ public class RedBusCalendarTest {
     private boolean isElementDisplayed(By by) {
 
         try {
-            driver.findElement(by).isDisplayed();
-            return true;
+            return driver.findElement(by).isDisplayed();
         } catch (NoSuchElementException e) {
             return false;
         }
